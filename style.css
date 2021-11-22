@@ -15,7 +15,9 @@ body {
 section{
     background-color: hsl(244, 38%, 16%);
     display: flex;
-    color:hsl(0, 0%, 100%)
+    color:hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden;
 }
 @media (max-width:767px) {
     section {
@@ -26,7 +28,7 @@ section{
     }
 }
 section .content {
-    padding: 70px;
+    padding: 50px;
     max-width: 50%;
 }
 @media (max-width:767px) {
@@ -42,7 +44,7 @@ section .content {
 }
 section .content h1 {
     width:400px;
-    font-size:35px
+    font-size:33px
 }
 @media (max-width:767px) {
     section .content h1 {
@@ -52,8 +54,8 @@ section .content h1 {
 }
 section .content p {
     color:hsla(0, 0%, 100%, 0.75);
-    margin-top:20px;
-    margin-bottom: 50px;
+    margin-top:30px;
+    margin-bottom: 70px;
     line-height:1.7;
     width: 350px;
 }
@@ -89,7 +91,6 @@ section .content .other span:last-of-type {
 }
 section .image {
     position: relative;
-    width: 50%;
 }
 @media (max-width:767px) {
     section .image {
@@ -101,8 +102,10 @@ section .image::before {
     position:absolute;
     width:100%;
     height: 100%;
-    background-color: hsl(277deg 64% 61% / 70%);
+    background-color:hsl(277deg 81% 22% / 70%);
 }
+    
+
 section .image img {
     width: 100%;
     max-width: 100%;
